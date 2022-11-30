@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3202dbdfe0.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+
+    <style>
+        .unordered {
+            margin-left: 40px;
+        }
+
+        .ordered {
+            margin-left: 35px;
+        }
+
+        /* The browser window */
+        .container {
+            margin-top: 50px;
+            border: 3px solid #f1f1f1;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        /* Container for columns and the top "toolbar" */
+        .row {
+            padding: 10px;
+            background: linear-gradient(to right, rgb(226, 82, 113), rgb(232, 118, 157));
+            border-radius: 15px 15px 0 0;
+
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+        }
+
+        .left {
+            width: 15%;
+        }
+
+        .right {
+            width: 10%;
+        }
+
+        .middle {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Three dots */
+        .dot {
+            margin-top: 4px;
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Style the input field */
+        input[type=text] {
+            width: 100%;
+            border-radius: 3px;
+            border: none;
+            background-color: white;
+            margin-top: -8px;
+            height: 25px;
+            color: #666;
+            padding: 5px;
+        }
+
+        /* Three bars (hamburger menu) */
+        .bar {
+            width: 17px;
+            height: 3px;
+            background-color: #aaa;
+            margin: 3px 0;
+            display: block;
+        }
+
+        /* Page content */
+        .content {
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <p class="header__logo">Portfolio</p>
+        <ul class="header__btn-container">
+            <li class="header__li"><a class="header__btn" href="#proj">Projects</a></li>
+            <li class="header__li"><a class="header__btn" href="#about">About me</a></li>
+            <li class="header__li"><a class="header__btn" href="#cont">Contact</a></li>
+            </ul>
+                <div id="links">
+                    <a href="">facebook</a>
+                    <a href="https://www.instagram.com/pradum_.singh/">Instagram</a>
+                    <a href="https://www.linkedin.com/in/pradum-singh-9ba64b227/">LinkedIn</a>
+                </div>
+    
+    </div>
+    <hr class="headerUnderline">
+    <div class="home">
+        <div class="home__left">
+            <p class="home__first-line">I'm</p>
+            <h2 class="home__second-line">Junior Front-End Developer <span
+                    class="home__second-line home__second-line--pink">&</span> Programmer</h2>
+            <h1 class="home__third-line">Pradum Singh</h1>
+            <ul class="home__btn-container">
+                <li><a class="home__btn" href="#proj">My projects</a></li>
+                <li><a class="home__btn" href="Pragya Gautam.pdf">Get Resume</a></li>
+            </ul>
+        </div>
+        <div class="home__right">
+            <div class="home__frame-shadow">
+                <div class="home__photo-frame">
+                    <img class="home__photo" src="./images/pic.jpg" alt="photo">
+
+                </div>
+            </div>
+        </div>
+        <!-- <img class="home__object home__object--1" src="https://raw.githubusercontent.com/pragyagautam02/Deliverables_Oasis_InfoByte/a32fb7e3ce1cc7cfcad96f53254d992e5409ecd9/Personal%20Portfolio/images/icon_fb_pink.svg" alt="graphic....."> -->
+        <!-- <img class="home__object home__object--2" src="./images/obiekt2.png" alt="graphic1">
+        <img class="home__object home__object--3" src="./images/obiekt3.png" alt="graphic2">
+        <img class="home__object home__object--4" src="./images/obiekt4.png" alt="graphic3">
+        <img class="home__object home__object--5" src="./images/obiekt5.png" alt="graphic4"> -->
+    </div>
+    <div class="about" id="about">
+        <div class="about__window">
+            <div class="about__window-bar">
+                <div class="about__button-wrapper">
+                    <div class="about__bar-btn about__bar-btn--red"></div>
+                    <div class="about__bar-btn about__bar-btn--yellow"></div>
+                    <div class="about__bar-btn about__bar-btn--green"></div>
+                </div>
+                <p class="about__bar-text">//About</p>
+            </div>
+            <h3 class="about__heading">// <span class="about__heading about__heading--pink">About</span></h3>
+            <div class="about__content">
+                <div class="about__content-me">
+                    <p class="about__second-heading">&lt/<span
+                            class="about__second-heading about__second-heading--pink">Me</span>&gt</p>
+                    <p class="about__second-heading">{</p>
+                    <div class="about__me-text-wrapper">
+
+                        <p style="color: #5a5959;" class="about__me-text">
+                            Hii folks! I am Pradum Singh. I'm currently pursuing Bachelor's in Computer Science.
+                            Since last few years i've been working with Web development and Java
+                            programming and gradually developed a huge interest in this. </p>
+                        <br>
+                        <p style="color: #5a5959;" class="about__me-text">
+                         
+                        </p>
+                        <p style="margin-bottom: 7px; margin-top: 10px; margin-left: 0%;" class="about__second-heading">
+                            }</p>
+                    </div>
+
+                </div>
+                <div class="about__content-skills">
+                    <p class="about__second-heading">&lt/<span
+                            class="about__second-heading about__second-heading--pink">Skills</span>&gt</p>
+                    <div class="about__skills-wrapper">
+
+                        <div class="about__bar-wrapper">
+                            <div class="about__skills-bar">
+                                <div class="about__skills-bar about__skills-bar--pink about__skills-bar--html">HTML
+                                </div>
+                            </div>
+                            <p class="about__bar-percentages">90%</p>
+                        </div>
+
+                        <div class="about__bar-wrapper">
+                            <div class="about__skills-bar">
+                                <div class="about__skills-bar about__skills-bar--pink about__skills-bar--css">CSS
+                                                </div>
+                            </div>
+                            <p class="about__bar-percentages">85
+                                %</p>
+                        </div>
+
+                        <div class="about__bar-wrapper">
+                            <div class="about__skills-bar">
+                                <div class="about__skills-bar about__skills-bar--pink about__skills-bar--js">JS
+                                </div>
+                            </div>
+                            <p class="about__bar-percentages">70%</p>
+                        </div>
+
+                        <div class="about__bar-wrapper">
+                            <div class="about__skills-bar">
+                                <div class="about__skills-bar about__skills-bar--pink about__skills-bar--react">Java
+                                </div>
+                            </div>
+                            <p class="about__bar-percentages">80%</p>
+                        </div>
+
+                        <div class="about__bar-wrapper">
+                            <div class="about__skills-bar">
+                                <div class="about__skills-bar about__skills-bar--pink about__skills-bar--git">JavaScript
+                                </div>
+                            </div>
+                            <p class="about__bar-percentages">60%</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="proj">
+        <div class="projects_main-container">
+            <div class="projects__heading-wrapper">
+                <p class="projects__heading-text">// <span
+                        class="projects__heading-text projects__heading-text--white">Projects</span></p>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ED594A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#5AC05A;"></span>
+                    </div>
+                    <div class="column middle">
+                        <input type="text" value="https://github.com/PradumSingh748/Front-End-Project.git">
+                    </div>
+                    <div class="column right">
+                        <div style="float:right">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <h3></h3>
+                    <h5></h5>
+                    <br>
+                    <ul style="color: #565656;" class="unordered">
+                        
+                </div>
+            </div>
+
+            <div class="projects__bar">
+                <!-- <div style="color: #000000;" class="projects__bar-btn">Python</div>
+                <div style="color: #000000;" class="projects__bar-btn">Machine Learning</div>
+                <div style="color: #000000;" class="projects__bar-btn">LSTM</div> -->
+            </div>
+
+            <div class="projects__windows">
+                <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/product.html"><img
+                    style="margin-top: 10px;" src="./images/project1.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/category.html"><img
+                    style="margin-top: 10px;" src="./images/project2.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/cart.html"><img
+                    style="margin-top: 10px;" src="./images/project3.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/order_confirmation.html"><img
+                    style="margin-top: 10px;" src="./images/project4.PNG" width="370" height="180"></a>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="column left">
+                        <span class="dot" style="background:#ED594A;"></span>
+                        <span class="dot" style="background:#FDD800;"></span>
+                        <span class="dot" style="background:#5AC05A;"></span>
+                    </div>
+                    <div class="column middle">
+                        <input type="text"
+                            value="https://github.com/pragyagautam02/CoEquip-A-Covid-Equipment-Solution-Website-">
+                    </div>
+                    <div class="column right">
+                        <div style="float:right">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    
+                </div>
+            </div>
+
+            <div class="projects__bar">
+                <!-- <div style="color: #000000;" class="projects__bar-btn">HTML</div>
+                <div style="color: #000000;" class="projects__bar-btn">CSS</div>
+                <div style="color: #000000;" class="projects__bar-btn">JavaScript</div> -->
+            </div>
+            <div class="projects__windows">
+                <!-- FINAL PROJECT -->
+                <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/product.html"><img
+                    style="margin-top: 10px;" src="./images/sec_proj1.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/category.html"><img
+                    style="margin-top: 10px;" src="./images/sec_project2.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/cart.html"><img
+                    style="margin-top: 10px;" src="./images/sec_project3.PNG" width="370" height="180"></a>
+            <a class="projects__window"
+                href="file:///C:/Users/91638/Desktop/CoEquip%20-%20A%20Covid%20Equipment%20Solution%20Website/order_confirmation.html"><img
+                    style="margin-top: 10px;" src="./images/sec_project4.PNG" width="370" height="180"></a>
+               
+
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="cont">
+        <div class="contact__heading-wrapper">
+            <!-- <img class="contact__background3" src="./images/bg1.avif" alt="back      ground"> -->
+            <p class="contact__heading">// <span class="contact__heading contact__heading--pink">Contact</span></p>
+        </div>
+        <form class="contact__form">
+            <input class="contact__input" type="text" name="name" placeholder="Name:">
+            <input class="contact__input" id="fname" type="text" placeholder="E-mail:">
+            <textarea class="contact__subject" id="subject" name="subject" cols="60" rows="6"
+                placeholder="Type your message..."></textarea>
+            <input class="contact__submit" type="submit" value="Send >">
+        </form>
+    </div>
+    <!-- <div class="footer">
+        <div class="footer__object"></div>
+        <div class="footer__scroll-back"></div>
+        <div class="footer__icons">
+            <a href="https://pl-pl.facebook.com/" target="_blank">
+                <div class="footer__icon footer__icon--fb"></div>
+            </a>
+            <a href="https://www.instagram.com/pradum_.singh/" target="_blank">
+                <img width="60px" height="40px" class="header__icon" src="./images/Instagram-Logo.wine.png"
+                    alt="instagram"><h4>instagram</h4>
+            </a>
+            <a href="https://www.linkedin.com/in/pragyagautam0208/" target="_blank">
+                <div class="footer__icon footer__icon--linkedin"></div>
+            </a>
+        </div>
+        <p class="footer__logo"></p>
+        <p class="footer__signature">Pradum Singh 2022</p>
+    </div> -->
+    <div class="footer">
+        <h2>PRADUM SINGH 2022</h2>
+        <a href="https://www.instagram.com/pradum_.singh/"><img width="30px" height="30px" src="./images/Instagram-Logo.wine.png" alt="">Instagram</a>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
